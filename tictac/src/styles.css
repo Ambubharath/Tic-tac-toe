@@ -1,0 +1,110 @@
+/* General Page Styling */
+body {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #090909, #090909);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Game Container */
+  .game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Board Grid */
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Square Styling */
+  .square {
+    width: 120px;
+    height: 120px;
+    font-size: 2.5rem;
+    background: white;
+    color: black !important;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background 0.3s;
+  }
+  
+  .square:hover {
+    transform: scale(1.1);
+    background: #f5f5f5;
+  }
+  
+  /* Reset Button */
+/* Stylish Reset Button */
+.reset-btn {
+    margin-top: 40px; /* Increased from 20px to 40px */
+    padding: 12px 28px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #08080b, #000000);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0px 4px 15px rgba(4, 4, 4, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background 0.3s;
+  }
+  
+  .reset-btn:hover {
+    background: linear-gradient(135deg, #291e9f, #b3bbc1);
+    transform: scale(1.1);
+    box-shadow: 0px 6px 20px rgba(246, 245, 245, 0.8);
+  }
+  
+  .reset-btn:active {
+    transform: scale(0.95);
+  }
+  
+  
+  
+  /* Winner Banner */
+  .winner-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px 50px;
+    font-size: 3rem;
+    font-weight: bold;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .game-container:hover .winner-banner {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  .game-title{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #f9fafb;
+  }
+
+  
